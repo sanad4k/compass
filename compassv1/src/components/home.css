@@ -81,11 +81,11 @@ body {
 
 .home-header h2 {
     text-align: center;
-    font-size: 120px;
+    font-size: 140px;
     font-weight: bold;
     text-transform: uppercase;
     margin:0;
-    color: #e63946;
+    color: #fb4050;
 }
 
 .home-header .white-text {
@@ -165,7 +165,9 @@ body {
 }
 
 .company-area {
-    margin-top: 0px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Center vertically */
     width: 80%;
     background-color: #f9e5e5;
     padding: 100px;
@@ -174,8 +176,14 @@ body {
 }
 
 .company-area p{
-    margin-top: 10px ;
+    line-height: 2 ;
     color: #201f1f
+}
+
+.company-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some space around the images */
 }
 
 .footer {
