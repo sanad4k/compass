@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+compassv1/node_modules
+compassv1/.pnp
+compassv1/.pnp.js
+
+# testing
+compassv1/coverage
+
+# production
+compassv1/build
+
+# misc
+compassv1/.DS_Store
+compassv1/.env.local
+compassv1/.env.development.local
+compassv1/.env.test.local
+compassv1/.env.production.local
+
+compassv1/npm-debug.log*
+compassv1/yarn-debug.log*
+compassv1/yarn-error.log*
