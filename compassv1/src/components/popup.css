@@ -1,0 +1,49 @@
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/black-inlay-wall-texture_1194-7191.jpg?t=st=1737799817~exp=1737803417~hmac=48d2d0ee3658ea40a8e593a50b7b115e1824aef73cc4e6bb814e3cebc4509220&w=74');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .popup-box h3 {
+    color: #e63946;
+    margin-bottom: 20px;
+  }
+  
+  .popup-box input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e63946;
+    border-radius: 5px;
+  }
+  
+  .popup-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-box button:hover {
+    background-color: #d62828;
+  }

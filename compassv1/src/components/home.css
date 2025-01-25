@@ -2,6 +2,7 @@
 
 
 body {
+    height: 100%;
     margin: 0;
     font-family: 'Bakbak One', sans-serif;
     background-color: #444343;
@@ -14,14 +15,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://images.app.goo.gl/n34kfkwwLMBrzRYy5');
+    background-image: url('https://img.freepik.com/free-photo/black-inlay-wall-texture_1194-7191.jpg?t=st=1737799817~exp=1737803417~hmac=48d2d0ee3658ea40a8e593a50b7b115e1824aef73cc4e6bb814e3cebc4509220&w=74');
     background-size: cover;
     background-position: center;
 }
 
 .login-box {
     background-color: #ffffff;
-    color: #333333;
+    color: #dbdbdb;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -62,9 +63,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: Left;
     height: 100vh;
-    background-image: url('https://images.app.goo.gl/n34kfkwwLMBrzRYy5');
+    background-image: url('https://img.freepik.com/free-photo/black-inlay-wall-texture_1194-7191.jpg?t=st=1737799817~exp=1737803417~hmac=48d2d0ee3658ea40a8e593a50b7b115e1824aef73cc4e6bb814e3cebc4509220&w=74');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -79,10 +80,11 @@ body {
 }
 
 .home-header h2 {
-    font-size: 40px;
+    text-align: center;
+    font-size: 120px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0;
+    margin:0;
     color: #e63946;
 }
 
@@ -113,7 +115,7 @@ body {
 
 .content {
     padding: 20px;
-    min-height: 1200px; /* Increase height for scrollability */
+    min-height: 600px; /* Increase height for scrollability */
 }
 
 .search-container {
@@ -122,29 +124,62 @@ body {
 }
 
 .search-container input {
-    width: 60%;
+    width: 50%;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #e63946;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 3px solid #e63946;
 }
 
 .response-area {
+    margin-bottom: 40px;
+    width: 80%;
     background-color: #666666;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+    padding: 100px;
+    border-radius: 15px;
+    border: 0px solid #272626;
 }
 
 .summary-box {
-    background-color: #888888;
+    width: 92%;
+    background-color: #ff5858;
     padding: 15px;
     border-radius: 10px;
+    border: 0px solid #2d2d2d;
     margin: 20px 0;
 }
 
+.summary-box p{
+    color: #151515; /* Change this to your desired color */
+}
+
+.summary-box ul, .summary-box li{
+    text-align: left;
+}
+
+.parent-container input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.company-area {
+    margin-top: 0px;
+    width: 80%;
+    background-color: #f9e5e5;
+    padding: 100px;
+    border-radius: 15px;
+    border: 0px solid #272626;
+}
+
+.company-area p{
+    margin-top: 10px ;
+    color: #201f1f
+}
+
 .footer {
-    background-color: #444444;
+    background-color: #4b4b4b;
     padding: 20px;
     text-align: center;
     color: #999999;
@@ -153,6 +188,7 @@ body {
 .footer a {
     color: #ffffff;
     margin: 0 10px;
+    min-height: 1200px
 }
 
 .footer a:hover {
