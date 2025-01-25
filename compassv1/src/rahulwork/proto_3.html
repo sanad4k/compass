@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERVIEW DIARIES</title>
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const rollNo = document.getElementById('rollNo').value;
+            const branch = document.getElementById('branch').value;
+            const admissionYear = document.getElementById('admissionYear').value;
+            const uniqueId = document.getElementById('uniqueId').value;
+
+            const rollNoPattern = /^B\d{6}[A-Z]{2}$/;
+            if (!rollNoPattern.test(rollNo)) {
+                alert('Roll No must start with B, followed by 6 digits, and then 2 alphabets.');
+                return false;
+            }
+
+            if (uniqueId !== rollNo) {
+                alert('Unique ID must match the Roll No.');
+                return false;
+            }
+
+            document.querySelector('.login-container').classList.add('hidden');
+            document.querySelector('.home-container').classList.remove('hidden');
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login/Sign In</h2>
+            <form onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="rollNo" placeholder="Roll No" required>
+                <input type="text" id="branch" placeholder="Branch" required>
+                <input type="text" id="admissionYear" placeholder="Admission Year" required>
+                <input type="text" id="uniqueId" placeholder="Unique ID" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div class="home-container hidden">
+        <div class="home-header">
+            <h1>INTERVIEW DIARIES</h1>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Companies</a>
+            <a href="#">More</a>
+        </div>
+        <div class="content">
+            <div class="search-container">
+                <input type="text" placeholder="Ask the LLM model...">
+                <div class="response-area">
+                    <p>Response from the model will appear here...</p>
+                </div>
+                <div class="summary-box">
+                    <p><strong>Summary:</strong></p>
+                    <ul>
+                        <li>Name: </li>
+                        <li>Company: </li>
+                        <li>Academic Year: </li>
+                        <li>Stipend: </li>
+                        <li>Internship or Job: </li>
+                        <li>Skills: </li>
+                        <li>Job Role: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Interview Diaries &copy; 2025. All rights reserved.</p>
+            <a href="#">WhatsApp</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
